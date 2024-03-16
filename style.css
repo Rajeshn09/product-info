@@ -1,82 +1,86 @@
-*{
+* {
   background-color: black;
   padding: 0px;
   margin: 0;
 }
-body{background-color: black;}
-.navbar{
-  background-color: aliceblue;
+body {
+  background-color: black;
 }
-section{
+
+section {
   padding: 0;
-} 
+}
+.row3 { 
+  display: flex;
+  justify-content: center;
+  padding-right: 110px;
+}
+
 .lens_section-1 {
   width: 100%;
   height: 500px;
   background-repeat: no-repeat;
-  background-image: url('images/lenss.png'); 
+  background-image: url("images/lenss.png");
   background-size: contain;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
 }
-.lens_section-2{
+.lens_section-2 {
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
-  background-image: url('images/img-2.png'); 
+  background-image: url("images/img-2.png");
   background-size: contain;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
 }
-.lens_section-3{
+.lens_section-3 {
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
-  background-image: url('images/img-3.png'); 
+  background-image: url("images/img-3.png");
   background-size: contain;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
 }
-.lens_section-4{
+.lens_section-4 {
   width: 100%;
   height: 400px;
   background-repeat: no-repeat;
-  background-image: url('images/snapdragon.png'); 
+  background-image: url("images/snapdragon.png");
   background-size: contain;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
   margin-left: 20%;
 }
-.lens_section-5{
+.lens_section-5 {
   width: 300px;
   height: 200px;
   background-repeat: no-repeat;
-  background-image: url('images/img-5.png'); 
+  background-image: url("images/img-5.png");
   background-size: contain;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
 }
-.lens_section-6{
+.lens_section-6 {
   width: 300px;
   height: 200px;
   background-repeat: no-repeat;
-  background-image: url('images/img-6.png'); 
+  background-image: url("images/img-6.png");
   background-size: contain;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
 }
-.lens_section-7{
- 
+.lens_section-7 {
   width: 100%;
   height: 280px;
   background-repeat: no-repeat;
-  background-image: url('images/horizontal.png'); 
+  background-image: url("images/horizontal.png");
   background-size: contain;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
-  
 }
-.lens_section-7 h3{
+.lens_section-7 h3 {
   color: white;
   font-style: bold;
   margin-top: 10%;
@@ -87,30 +91,26 @@ section{
   font-weight: 10px;
 }
 
-.description{
-
+.description {
   color: white;
 }
-.mobile{
-  background-image: url('images/N1_Lifestyle_shot_Black.png');
+.mobile {
+  background-image: url("images/N1_Lifestyle_shot_Black.png");
   width: 100%;
   height: 500px;
   background-size: cover;
   padding: 0;
-  background-position: center center; 
+  background-position: center center;
   border-radius: 20px;
 }
-.nano-tech{
-  background-image: url('images/nano-tech.webp');
+.nano-tech {
+  background-image: url("images/nano-tech.webp");
   width: 100%;
   height: 300px;
   background-size: cover;
   position: relative;
   width: 100%;
   margin-top: 10%;
-
-  
-  
 }
 .nano-text {
   position: absolute;
@@ -118,29 +118,33 @@ section{
   top: 30%;
   text-align: left;
   background: none;
-  
- 
 }
-.nano-text h2,p{
+.nano-text h2,
+p {
   background: none;
   color: black;
-  
 }
-.camera{
+.text-center{
+  padding-bottom: 30px;
+}
+.camera {
   border: 2px solid white;
-  background-image: url('images/camera-1.jpg');
+  background-image: url("images/camera-1.jpg");
   width: 100%;
   height: 400px;
   background-size: cover;
 }
-.camera_section h1,p{
+.camera_section h1,
+p {
   color: white;
 }
 .video-section {
   position: relative;
   width: 100%;
 }
-
+video{
+  padding-bottom: 50px;
+}
 .video-wrapper {
   position: relative;
 }
@@ -155,11 +159,86 @@ section{
   padding: 20px;
   text-align: center;
   background: none;
-  
 }
 .footer-section {
   background-color: #333;
   color: #fff;
- 
+
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lens_section-1,
+  .lens_section-2,
+  .lens_section-3,
+  .lens_section-4,
+  .lens_section-5,
+  .lens_section-6{
+    height: 100px;
+    width: 80%;
+  }
+.mobile,  .nano-tech{
+  height: 150px;
+  width: 100%;
+  border-radius: 0%;
+}
+  .lens_section-7,
+  .camera,
+  .footer-section {
+    width: 100%;
+  }
+
+  .nano-text {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .camera {
+    border: 2px solid white;
+    background-image: url("images/camera-1.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  .video-overlay {
+    bottom: 20px;
+  }
+  video{
+    height: 800px;
+    width: 100%;
+  }
+  .text-center{
+    font-size: 80%;
+    margin: 5px;
+    justify-content: center;
+  }
+  .description1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  video{
+    padding: 0;
+  }
+  .video1{
+    height: auto;
+    width: 100%;
+    padding-bottom: 0%;
+  }
+  .btn{
+    padding-bottom: 0%;
+    padding-top: 30px;
+  }
+  p{
+    width: 100%;
+  }
+  .container-fluid{
+    width: 80%;
+  }
 }
